@@ -1,0 +1,10 @@
+# basic options
+title: Do Japonii i z powrotem
+author: Michał "Orzecho" Dąbrowski
+email: orzecho6@gmail.com
+description: Dziennik z podróży po Japonii
+github_username:  orzecho
+
+# Build settings
+markdown: kramdown
+theme: minima
