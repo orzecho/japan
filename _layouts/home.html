@@ -4,11 +4,11 @@ layout: default
 
 <div class="home">
     {% assign firstPost = site.posts.first %}
-    {% assign firstPostContent = post.content %}
+    {% assign firstPostContent = firstPost.content %}
   
     {% if firstPost.title %}
         <h1 class="entry-title">
-            <a href="{{ root_url }}{{ firstPost.url }}">{{ firstPost.title }}</a>
+            <a href="{{ firstPost.url | relative_url }}">{{ firstPost.title }}</a>
         </h1>      
     {% endif %}
     <div class="entry-content">{{ firstPostContent }}</div>
