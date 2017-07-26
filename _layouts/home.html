@@ -8,7 +8,7 @@ layout: default
   
     {% if firstPost.title %}
         <h1 class="entry-title">
-            <a href="{{ firstPost.url }}">{{ firstPost.title }}</a>
+            <a href="{{ firstPost.url | relative_url }}">{{ firstPost.title }}</a>
         </h1>      
     {% endif %}
     <div class="entry-content">{{ firstPostContent }}</div>
