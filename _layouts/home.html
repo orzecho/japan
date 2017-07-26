@@ -3,10 +3,19 @@ layout: default
 ---
 
 <div class="home">
+    {% assign firstPost = site.posts.first %}
+    {% assign firstPostContent = post.content %}
+  
+    {% if firstPost.title %}
+        <h1 class="entry-title">
+            <a href="{{ root_url }}{{ firstPost.url }}">{{ firstPost.title }}</a>
+        </h1>      
+    {% endif %}
+    <div class="entry-content">{{ firstPostContent }}</div>
+    
+    {{ content }}
 
-  {{ content }}
-
-  <h1 class="page-heading">Wpisy</h1>
+  <h1 class="page-heading">Wszystkie wpisy</h1>
   
   <ul class="post-list">
     {% for post in site.posts %}
