@@ -8,3 +8,5 @@ github_username:  orzecho
 # Build settings
 markdown: kramdown
 theme: minima
+gems:
+   - jekyll-responsive-image
