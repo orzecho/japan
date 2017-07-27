@@ -11,6 +11,8 @@ layout: default
             <a href="{{ firstPost.url | relative_url }}">{{ firstPost.title }}</a>
         </h1>      
     {% endif %}
+    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+    <span class="post-meta">{{ post.date | date: date_format }}</span>
     <div class="entry-content">{{ firstPostContent }}</div>
     
     {{ content }}
